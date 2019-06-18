@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sleeper
+spec:
+  containers:
+  - name: sleeper
+    image: busybox
+    command: ["/bin/bash", "-c", "while true ; do sleep 10 ; done"]
+  restartPolicy: Never

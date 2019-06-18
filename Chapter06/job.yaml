@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: yeah-it-works
+spec:
+  template:
+    spec:
+      containers:
+      - name: yeah-it-works
+        image: python:3.6-alpine
+        command: ["python",  "-c", "print('Yeah, it works in a Job!!!')"]
+      restartPolicy: Never

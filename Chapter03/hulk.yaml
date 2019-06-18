@@ -1,0 +1,8 @@
+apiVersion: "example.org/v1"
+kind: SuperHero
+metadata:
+  name: hulk
+spec:
+  superpower: "super strong"
+  size: "big"
+  color: "green"

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: some-pod
+spec:
+  containers:
+  - name: some-container
+    image: busybox
+    command: [ "/bin/sh", "-c", "watch 'echo \"superhero: $SUPERHERO villain: $VILLAIN\"'" ]
+    envFrom:
+    - configMapRef:
+        name: env-config
+  restartPolicy: Never

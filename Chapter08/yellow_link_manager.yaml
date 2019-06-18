@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yellow-link-manager
+  labels:
+    svc: link
+    app: manager
+    deployment: yellow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      svc: link
+      app: manager
+      deployment: yellow
+  template:
+    metadata:
+      labels:
+        svc: link
+        app: manager
+        deployment: yellow
+    spec:
+      serviceAccount: link-manager
+      containers:
+      - name: link-manager
+        image: g1g1/delinkcious-link:0.5
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: link-manager-config
+        volumeMounts:
+        - name: mutual-auth
+          mountPath: /etc/delinkcious
+          readOnly: true
+      volumes:
+      - name: mutual-auth
+        secret:
+          secretName: link-mutual-auth

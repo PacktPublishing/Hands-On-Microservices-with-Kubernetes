@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ko-link-manager
+  labels:
+    svc: link
+    app: manager
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      svc: link
+      app: manager
+  template:
+    metadata:
+      labels:
+        svc: link
+        app: manager
+    spec:
+      serviceAccount: link-manager
+      containers:
+      - name: link-manager
+        image: "github.com/the-gigi/delinkcious/svc/link_service"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: link-manager-config
+        volumeMounts:
+        - name: mutual-auth
+          mountPath: /etc/delinkcious
+          readOnly: true
+      volumes:
+      - name: mutual-auth
+        secret:
+          secretName: link-mutual-auth

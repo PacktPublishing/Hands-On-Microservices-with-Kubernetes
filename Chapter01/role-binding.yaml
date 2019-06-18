@@ -1,0 +1,13 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: pod-reader
+  namespace: default
+subjects:
+- kind: User
+  name: gigi # Name is case sensitive
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role # must be Role or ClusterRole
+  name: pod-reader # must match the name of the Role or ClusterRole you bind to
+  apiGroup: rbac.authorization.k8s.io

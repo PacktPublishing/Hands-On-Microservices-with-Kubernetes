@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: ResourceQuota
+  metadata:
+    name: awesome-quota
+  spec:
+    hard:
+      cpu: "1000"
+      memory: 200Gi
+      pods: "100"

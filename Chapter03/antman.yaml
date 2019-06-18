@@ -1,0 +1,7 @@
+apiVersion: "example.org/v1"
+kind: SuperHero
+metadata:
+  name: antman
+spec:
+  superpower: "can shrink"
+  size: "tiny"

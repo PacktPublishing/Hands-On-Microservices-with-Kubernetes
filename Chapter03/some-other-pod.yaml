@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: some-other-pod
+spec:
+  containers:
+  - name: some-container
+    image: busybox
+    command: [ "/bin/sh", "-c", "watch \"cat /etc/config/comics\"" ]
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+  volumes:
+  - name: config-volume
+    configMap:
+      name: file-config
+  restartPolicy: Never

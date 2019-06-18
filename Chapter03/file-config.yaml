@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: file-config
+  namespace: default
+data:
+  comics: |+
+    superhero: Doctor Strange
+    villain: Thanos
+
