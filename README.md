@@ -61,7 +61,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Gigi Sayfan**
 is a principal software architect at Helix — a bioinformatics and genomics start-up and author of Mastering Kubernetes. Gigi has been developing software professionally for more than 20 years in domains as diverse as instant messaging, morphing, chip fabrication process control, embedded multimedia applications for game consoles, brain-inspired machine learning, custom browser development, web services for 3D distributed game platforms, IoT sensors and virtual reality. He has written production code in many programming languages such as Go, Python, C, C++, C#, Java, Delphi, JavaScript, and even Cobol and PowerBuilder for operating systems such as Windows (3.11 through 7), Linux, Mac OS, Lynx (embedded), and Sony PlayStation. His technical expertise includes databases, low-level networking, distributed systems, unorthodox user interfaces, and general software development life cycle.
 
-## Other books by the authors
+## Other book by the author
 [Kubernetes Cookbook - Second Edition ](https://www.packtpub.com/virtualization-and-cloud/kubernetes-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788837606)
 
 ### Suggestions and Feedback
