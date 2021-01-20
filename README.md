@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/hands-on-microservices-with-kubernetes/9781789805468)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1789805465).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Hands-On Microservices with Kubernetes 
 
 <a href="https://www.packtpub.com/virtualization-and-cloud/hands-microservices-kubernetes?utm_source=github&utm_medium=repository&utm_campaign=9781789805468"><img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/b/1/b12819_mockupcover.png" alt="Hands-On Microservices with Kubernetes " height="256px" align="right"></a>
