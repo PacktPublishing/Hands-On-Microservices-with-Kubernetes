@@ -8,6 +8,6 @@ spec:
     image: g1g1/py-kube:0.2
     command: ["/bin/bash", "-c", "while true ; do sleep 10 ; done"]
     securityContext:
-      privileged: true
-      allowPrivilegeEscalation: true
+      privileged: false
+      allowPrivilegeEscalation: false
 
